@@ -1,0 +1,684 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+/* ลิ้ง promt font */
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ลิ้ง lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,html {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  width: 100% !important;
+}
+/* navigation */
+.container {
+  width: 100%;
+}
+#menu {
+  padding: 20px;
+  transition: all 0.8s;
+  margin-bottom: 0;
+}
+.navbar-header{
+    color: rgb(255, 115, 0);
+}
+#collapse-1 {
+    width: 100%;  /* ขยายความกว้างให้เต็มหน้าจอ */
+    height: auto; /* กำหนดให้สูงตามเนื้อหา */
+    padding: 10px;
+}
+#menu.navbar-default {
+  background-color: #fff;
+}
+#menu a.navbar-brand {
+  font-size: 20px;
+  color: rgb(255, 115, 0);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 7px 20px;
+}
+#menu a.navbar-brand img{
+  width: 90px;
+  height: 90px;
+  margin-top: -25px;
+  margin-left: -20px;
+}
+#menu.navbar-default .navbar-nav li a:hover {
+  border-bottom: 2px solid rgb(255, 115, 0); /* สร้างเส้นใต้ */
+  padding-bottom: 10px; /* เว้นระยะห่างระหว่างข้อความกับเส้นใต้ */
+  transition: 0.2s;
+  color: rgb(255, 115, 0);
+}
+.navbar-collapse ul {
+  margin-left: 320px;
+}
+.navbar-collapse ul li {
+  padding-left: 15px;
+  font-size: 18px;
+}
+.navbar-collapse ul li a.active {
+  color: rgb(255, 115, 0);
+  font-weight: bold;
+}
+.navbar-right {
+  display: inline-flex;
+  justify-content: center; 
+  text-align: center;
+  height: 40px;
+}
+.login {
+  margin-right: 20px;  /* ช่องว่างระหว่างปุ่ม */
+}
+.sign{
+  margin-right: 50px;  /* ช่องว่างระหว่างปุ่ม */
+}
+/* สไตล์สำหรับปุ่ม Login และ Sign up */
+.login,.sign {
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between; /* จัดระยะห่างระหว่างองค์ประกอบ */
+  align-items: center; /* จัดให้กลางในแนวตั้ง */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  color: rgb(28, 28, 28); /* สีข้อความ */
+  border: none; /* ลบเส้นขอบ */
+  padding: 25px 50px; /* ขนาดของปุ่ม */
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  text-decoration: none; /* ลบการขีดเส้นใต้ */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  border-radius: 5px; /* ย่อมุมปุ่ม */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+  transition: background-color 0.3s ease; /* เพิ่ม transition เมื่อ hover */
+}
+
+/* สไตล์เมื่อ hover บนปุ่ม */
+.login:hover,.sign:hover {
+  background-color: rgb(255, 115, 0); /* สีเมื่อ hover */
+  color: white;
+}
+#active {
+  background-color: rgb(255, 115, 0); /* สีเมื่อ hover */
+  color: white;
+}
+
+/* Header Section */
+
+.header{
+  width: 100%;
+  height: 370px;
+  display: flex;
+}
+.header-l{
+  width: 50%;
+  height: 100%;
+  background-image: url(https://img.freepik.com/free-photo/abstract-design-with-colorful-patterns-nature-leaf-generated-by-ai_188544-15573.jpg?t=st=1731617564~exp=1731621164~hmac=9f777d8eb5b9d0160e1e1f7ac1fa71b1c21b8900248fbbb291fe15cd062432c2&w=1060);
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%; /* กำหนดให้ภาพอยู่ตรงกลาง */
+}
+.header-l h1{
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+.search-container input{
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 40px;
+  margin-left: 130px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.search-container button{
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 310px;
+  margin-top: 20px;
+  border: 2px solid rgb(255, 115, 0); /* ความหนา สี และประเภทเส้นขอบ */
+}
+.header-r{
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+.header-r .filter-container{
+  margin-left: 40px;
+}
+.header-r .filter-container select{
+  width: 180px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 50px;
+  color: rgb(255, 115, 0);
+  padding-left: 5px;
+}
+.header-r .filter-container select option:hover{
+  background-color: #f89e62;
+  color: #FFFFFF; /* Text color, if needed */
+}
+.header-r .filter-container option,.course-now option{
+  font-size: 16px;
+}
+.header-r .cos h1{
+  color: #ffffff;
+  font-size: 25px;
+}
+.header-r .cos {
+  margin-left: 50px;
+}
+.header-r .cos button{
+  width: 160px;
+  height: 120px;
+  border-radius: 2%;
+}
+.header-r .cos button img{
+  margin-bottom: 10px;
+}
+.header-r .cos .avtive{
+  background-color: rgb(255, 115, 0);
+  color: #fff;
+  }
+.header-r .cos button:hover{
+  background-color: rgb(255, 115, 0);
+  color: #fff;
+}
+
+/* <!-- คอสสสสส --> */
+
+.course{
+  width: 100%;
+  padding: 30px 70px;
+  position: relative;
+}
+.course h1{
+  font-size: 40px;
+  margin: 0;
+}
+.course h2{
+  margin: 5px 0 0 0;
+  font-size: 25px;
+  color: #878787;
+}
+.course-now select{
+  width: 155px;
+  height: 45px;
+  font-size: 24px;
+  position: absolute;
+  bottom: 130px;
+  left: 85%;
+  border-radius: 10px;
+  color: #ff6f00;
+  border: 2px solid #FFA500; /* ความหนา สี และประเภทเส้นขอบ */
+}
+.course-line{
+  width: 100%;
+  height: 2px;
+  background-color: #ff6f00;
+  margin-top: 50px;
+}
+
+.hot-course {
+  text-align: center;
+}
+.hot-course h1{
+  color: #0B1924;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px 100px;
+}
+.course-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.course-card h3{
+  color: #0B1924;
+}
+
+.course-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.course-card h3 {
+  font-size: 25px;
+  padding: 0 10px;
+  color: #0B1924;
+}
+
+.course-card p {
+  font-size: 16px;
+  color: #666;
+  padding: 0 15px;
+}
+
+.course-card span {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  display: block;
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+.course-card span img{
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+}
+/* ********************************************* */
+.course-card button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  float: right;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.course-card button:hover,.course-all button:hover{
+  background-color: #e65c00;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+.course-all button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 7px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* ปุ่ม */
+
+.pagination {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  align-items: center;
+  gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+  margin: 20px 0;
+}
+
+.page-number,.arrow-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  color: #000000; /* สีข้อความ */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-number.active {
+  background-color: #ff6f00; /* สีส้มเมื่อ active */
+  color: #ffffff;
+}
+
+.page-number:hover,
+.arrow-btn:hover {
+  background-color: #ff6f00; /* สีเมื่อ hover */
+  color: #ffffff;
+}
+
+.arrow-btn {
+  background-color: transparent; /* ปุ่มลูกศร */
+  font-size: 24px;
+  color: #feb200;
+}
+
+/* รีวิว */
+
+.review{
+  width: 100%;
+  padding: 0px 90px;
+}
+.review h1{
+  font-size: 40px;
+  margin-left: 20px;
+}
+.review-box{
+  position: relative;
+  background-color: #000000;
+  border-radius: 20px;
+  color: #ffffff;
+  height: 600px;
+  width: 1350px;
+  cursor: default;
+}
+
+.arrow-btnn {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  color: #000000; /* สีข้อความ */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.arrow-btnn {
+  background-color: transparent; /* ปุ่มลูกศร */
+  font-size: 40px;
+  color: #feb200;
+}
+.arrow-btnn:hover {
+  background-color: #ff6f00; /* สีเมื่อ hover */
+  color: #ffffff;
+}
+
+.arrow-l{
+  position: absolute;
+  top: 50%;
+  right: 1230px;
+  z-index: 1;
+}
+.arrow-r{
+  position: absolute;
+  top: 50%;
+  left: 1230px;
+  z-index: 1;
+}
+.imgg{
+  /* background-color: #ff0000; */
+  position: relative;
+  width: 860px;
+  height: 570px;
+  top: 27px;
+  left: -30px;
+}
+.name-review{
+  position: relative;
+  bottom: 90px;
+  left: 130px;
+  width: 370px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+
+}
+.name-review h1{
+  color: #000000;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+
+}
+.name-review h2{
+  color: #000000;
+  font-size: 24px;
+  margin: 0;
+}
+.text-review{
+  position: relative;
+  bottom: 70%;
+  text-align: center;
+  font-size: 24px;
+  left: 14%;
+}
+.point{
+  position: relative;
+  width: 200px;
+  height: 40px;
+  bottom: 50%;
+  left: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.o{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 7px;
+}
+.o:hover{
+  background-color: #e65c00;
+  transition: 0.2s;
+}
+.o-A{
+  background-color: #e65c00;
+}
+
+/* footer */
+.footer {
+  background-color: #F4B739;
+  margin-top: 60px;
+  color: #000;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer div {
+  max-width: 200px;
+}
+.footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.footer h4 img{
+  width: 90px;
+  height: 90px;
+  margin-left: -20px;
+}
+.footer p{
+  margin-top: -20px;
+}
+.footer p, .footer a {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #000;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  background-color: #1D1D1D;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8em;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  #menu a.navbar-brand {
+    margin: 0;
+    padding-top: 20px;
+  }
+  #menu a.navbar-brand img{
+    width: 75px;
+    height: 75px;
+    margin-top: -22px;
+    margin-left: -20px;
+  }
+  .navbar-collapse ul {
+    margin: 0;
+    text-align: center;
+  }
+  /* header */
+  .intro .intro-text {
+    padding: 35px;
+  }
+  .navbar-center li{
+    margin-left: 10px;
+  }
+  .navbar-right {
+    margin: 15px;
+    text-align: center;
+  }
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header-l{
+    width: 100%;
+    height: 370px;
+  }
+  .header-r{
+    width: 100%;
+    height: 375px;
+  }
+  .search-container{
+    margin-left: -105px;
+  }
+  .search-container button{
+    width: 160px;
+    height: 40px;
+    margin-left: 222px;
+  }
+  .search-container input{
+    width: 340px;
+    height: 45px;
+  }
+  .header-r .filter-container select{
+    width: 340px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: -15px;
+  }
+  .header-r .cos button{
+    width: 110px;
+    height: 95px;
+  }
+  .header-r .cos{
+    margin-left: -15px;
+  }
+  .course{
+    margin-top: 390px;
+  }
+  .course h1{
+    font-size: 25px;
+    margin-left: -50px;
+  }
+  .course h2{
+    font-size: 16px;
+    margin-left: -50px;
+  }
+  .course-now{
+    margin-top: 90px;
+  }
+  .course-now select{
+    width: 90px;
+    height: 40px;
+    margin-left: -53px;
+  }
+  
+  .courses{
+    padding: 0;
+    margin: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .course-all{
+    margin-top: 20px;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .review{
+    margin-left: -70px;
+  }
+  .review h1{
+    font-size: 30px;
+  }
+  .review-box{
+    height: 750px;
+    width: 350px;
+  }
+  .imgg{
+    left: -50px;
+  }
+  .imgg img{
+    width: 500px;
+    height: 350px;
+  }
+  .name-review{
+    bottom: 200px;
+    left: 70px;
+    width: 200px;
+    height: 55px;
+  }
+  .name-review h1{
+    font-size: 20px;
+  }
+  .name-review h2{
+    font-size: 12px;
+  }
+  .text-review{
+    position: relative;
+    bottom: 20%;
+    text-align: center;
+    font-size: 16px;
+    left: 0.2%;
+  }
+  .point{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    bottom: 15%;
+    left: 22%;
+  }
+  .arrow-l, .arrow-r{
+    display: none;
+  }
+  .footer div {
+    max-width: 768px;
+  }
+  .footer p {
+    text-align: center;
+  }
+  .footer h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  #legal{
+    margin-left: 30px;
+  }
+  #follow{
+    margin-right: 215px;
+  }
+}

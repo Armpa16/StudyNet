@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyNet Course</title>
+    <link rel="shortcut icon" href="img-pic/Logo/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+<body>
+    <!-- Navigation  -->
+  <nav id="menu" class="navbar navbar-default">
+    <div class="container">
+        <!-- ส่วนโลโก้กับปุ่มหน้าจอมือถือ-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+              <span class="material-symbols-outlined" id="menu-icon">menu</span>
+            </button>
+            <a class="navbar-brand page-scroll" href="home.html"><img src="img-pic/Logo/logo.png" alt=""></a>
+        </div>
+        <!-- เมนู -->
+        <div class="collapse navbar-collapse" id="collapse-1">
+            <ul class="nav navbar-nav navbar-center">  <!-- ตั้งเมนูไว้ตรงกลาง -->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="course.html"class="active">Course</a></li>
+                <li><a href="mylearning.html">My learning</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav navbar-nav navbar-right"> <!-- ตั้งปุ่มไว้ขวา -->
+              <button class="login">Login</button>
+              <button class="sign" id="active">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <!-- container -->
+  </nav>
+
+  <!-- Header Section -->
+  <div class="header">
+    <!-- Left Side -->
+    <div class="header-l">
+      <h1>ค้นหาหลักสูตรที่เหมาะกับการพัฒนาทักษะของคุณ</h1>
+      <div class="search-container">
+        <input type="text" placeholder="ค้นหาหลักสูตรที่เหมาะกับคุณ...">
+        <br>
+        <button>ค้นหาคอร์สเรียน</button>
+      </div>
+    </div>
+    <!-- Right Side -->
+    <div class="header-r">
+      <div class="filter-container">
+        <select>
+          <option>หมวดหมู่คอร์ส</option>
+          <option>Basic Design</option>
+          <option>Graphic Design</option>
+          <option>Web Design</option>
+          <option>3D Design</option>
+          <option>Logo Design</option>
+          <option>UX/UI Design</option>
+          <option>Icon Design</option>
+          <option>Motion Graphic</option>
+        </select>
+        <select>
+          <option>ประเภทคอร์ส</option>
+          <option>คอร์สฟรี</option>
+          <option>คอร์สพรีเมี่ยม</option>
+          <option>คอร์สพรีเมี่ยม+</option>
+        </select>
+        <select>
+          <option>ราคา</option>
+          <option>0-500</option>
+          <option>500-1,000</option>
+          <option>1,000-2,000</option>
+          <option>มากกว่า 2,000</option>
+        </select>
+      <div class="cos">
+        <h1>การลงทะเบียน</h1>
+        <button class="avtive"><img src="img-pic/Icon/7.png" alt=""><br>คอร์สทั้งหมด</button>
+        <button><img src="img-pic/Icon/8.png" alt=""><br>เคยเรียนแล้ว</button>
+        <button><img src="img-pic/Icon/9.png" alt=""><br>ไม่เคยเรียน</button>
+      </div>
+      </div>
+    </div>
+  </div>
+    
+   <!-- คอสสสสส -->
+   <div class="course">
+    <h1>คอร์สทั้งหมด</h1>
+    <h2>ผลการค้นหา: 200 คอร์ส</h2>
+    <div class="course-now">
+      <select>
+        <option>ล่าสุด</option>
+        <option>เรียงจากตัวอักษร</option>
+        <option>เรียงจากราคา</option>
+      </select>
+    </div>
+    <div class="course-line"></div>
+  </div>
+
+
+  <div class="hot-course">
+    <div class="courses">
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/1.png" alt="Motion Graphics">
+        <h3>UI/UX Design</h3>
+        <p>
+          เรียนรู้การออกแบบ UI/UX ที่จะช่วยให้คุณสร้างประสบการณ์การใช้งานที่ยอดเยี่ยม!
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;20 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/2.png" alt="Motion Graphics">
+        <h3>Web Design</h3>
+        <p>
+          เรียนรู้การออกแบบเว็บไซต์ที่สวยงามและใช้งานได้ดี ด้วยเทคนิคและเครื่องมือที่ทันสมัย
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;18 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/3.png" alt="Motion Graphics">
+        <h3>Graphic Design</h3>
+        <p>
+          เรียนรู้การออกแบบกราฟิก ตั้งแต่การใช้โปรแกรมเบื้องต้นจนถึงการสร้างงานออกแบบที่มีความคิดสร้างสรรค์
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;30 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/4.png" alt="Motion Graphics">
+        <h3>Motion Graphics</h3>
+        <p>
+          คอร์สนี้จะพาคุณเรียนรู้เทคนิคการสร้าง motion graphics ที่จะทำให้การออกแบบของคุณมีชีวิตชีวาและน่าสนใจ
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;12 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/5.png" alt="Infographic Design Basics">
+        <h3>Typography Design</h3>
+        <p>
+          คอร์สนี้จะช่วยให้คุณเข้าใจและสร้างสรรค์การออกแบบตัวอักษรที่มีเอกลักษณ์ เพื่อสร้างการสื่อสารที่ชัดเจนและมีสไตล์
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;22 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/6.png" alt="Data Visualization">
+        <h3>Packaging Design</h3>
+        <p>
+          เรียนรู้การออกแบบบรรจุภัณฑ์ที่มีความสวยงามและดึงดูดลูกค้า
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;20 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/16.png" alt="Visual Design Basics">
+        <h3>UI Design</h3>
+        <p>
+          เรียนรู้วิธีการออกแบบอินเตอร์เฟซที่เข้าใจง่าย ใช้งานสะดวก และช่วยเพิ่มประสบการณ์ที่ดีให้กับผู้ใช้
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;12 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/17.png" alt="Design Thinking 101">
+        <h3>Vector Graphics</h3>
+        <p>
+          เรียนรู้การใช้เครื่องมือและเทคนิคในการสร้างกราฟิกแบบเวกเตอร์ที่มีประสิทธิภาพและสวยงาม
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;22 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/18.png" alt="UX for E-Commerce">
+        <h3>Color Theory</h3>
+        <p>
+          คอร์สนี้จะสอนให้คุณเข้าใจความหมายของสีเเละการเลือกสีที่เหมาะสมในการออกเเบบ
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;20 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/19.png" alt="UX for E-Commerce">
+        <h3>Responsive Design</h3>
+        <p>
+          คอร์สนี้จะช่วยให้คุณเรียนรู้วิธีการออกแบบที่รองรับทุกขนาดหน้าจอได้อย่างสมบูรณ์
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;20 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/20.png" alt="UX for E-Commerce">
+        <h3>Infographic Design</h3>
+        <p>
+          คอร์สนี้จะสอนวิธีการใช้กราฟิกเพื่อสื่อสารข้อมูลสำคัญให้ผู้ชมสามารถเข้าใจได้ทันที
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;20 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+      <div class="course-card">
+        <img src="img-pic/Pic-Course/21.png" alt="UX for E-Commerce">
+        <h3>Animation Basics</h3>
+        <p>
+          เริ่มต้นกับการออกแบบอนิเมชั่น ด้วยเทคนิคพื้นฐานที่จะช่วยให้คุณสร้างภาพเคลื่อนไหวที่ดูน่าสนใจและมีชีวิตชีวา
+        </p>
+        <span><img src="img-pic/Icon/5.png" alt="">&ensp;20 Hr.</span>
+        <button>ดูคอร์สเรียน</button>
+      </div>
+      <div class="free0000"></div><!-- ว่าง -->
+      <div class="pagination">
+        <button class="arrow-btn">&lt;</button>
+        <!-- ปุ่มย้อนกลับ -->
+        <button class="page-number active">1</button>
+        <button class="page-number">2</button>
+        <button class="page-number">3</button>
+        <button class="page-number">4</button>
+        <button class="page-number">5</button>
+        <button class="arrow-btn">&gt;</button>
+        <!-- ปุ่มถัดไป -->
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- รีวิว -->
+
+  <div class="review">
+    <h1>รีวิวจากผู้เรียน</h1>
+    <div class="review-box">
+      <div class="arrow-l">
+      <button class="arrow-btnn">&lt;</button>
+      </div>
+
+      <div class="imgg">
+        <img src="img-pic/Pic-Course/Reviews.png" alt="">
+      </div>
+
+      <div class="name-review">
+        <h1>นายดนัย ลี</h1>
+        <h2>นักศึกษาออกแบบกราฟฟิก ชั้นปีที่ 1</h2>
+      </div>
+
+      <div class="text-review">
+        การเรียนที่นี่สนุกและเต็มไปด้วยความสร้างสรรค์ครับ <br>
+        อาจารย์มีประสบการณ์และเปิดโอกาสให้เราได้เรียนรู้ เทคนิคใหม่ ๆ <br>
+        ผ่านโปรเจกต์ต่าง ๆ ทั้งยังได้ใช้โปรแกรมอย่าง <br>
+        Adobe Illustrator และ Photoshop <br>
+        ซึ่งสำคัญมากในการออกแบบโดยรวมแล้ว <br>
+        ผมรู้สึกพึงพอใจกับการเรียนที่นี่มาก <br>
+      </div>
+
+      <div class="arrow-r">
+      <button class="arrow-btnn">&gt;</button>
+      </div>
+
+      <div class="point">
+
+      <div class="o o-A" ></div>
+      <div class="o"></div>
+      <div class="o"></div>
+      <div class="o"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+
+<footer>
+  <div class="footer">
+    <div>
+      <h4><a href="home.html"><img src="img-pic/Logo/logo.png" alt=""></a></h4>
+      <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper donec justo eget a odio.</p>
+    </div>
+    <div id="quick">
+      <h3>Quick Links</h3>
+      <a href="home.html">Home</a><br>
+      <a href="course.html">Course</a><br>
+      <a href="article.html">Article</a><br>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div id="legal">
+      <h3>Legal Information</h3>
+      <a href="#">Privacy Policy</a><br>
+      <a href="#">Terms of Service</a><br>
+      <a href="#">Cookie Policy</a><br>
+      <a href="#">Refund Policy</a>
+    </div>
+    <div id="follow">
+      <h3>Follow Us</h3>
+      <a href="#">Facebook</a><br>
+      <a href="#">Instagram</a><br>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 StudyNet. All Rights Reserved.
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery.1.11.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="js/nivo-lightbox.js"></script>
+  <script src="js/jquery.isotope.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
